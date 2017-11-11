@@ -1,7 +1,7 @@
 ATtiny10Core
 ============
 
-For programming the ATtiny10/9/5/4. For more information see http://www.plasticki.com/show?1YQY.
+For programming the ATtiny10/9/5/4. For more information see http://www.technoblogy.com/show?1YQY.
 
 
 This is a boards.txt file that adds options to the Arduino IDE's Board menu for programming the ATtiny10/9/5/4. It doesn't include an Arduino core, so there is no support for Arduino functions pinMode(), millis(), etc.
