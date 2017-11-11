@@ -1,0 +1,1 @@
+# attiny10core
