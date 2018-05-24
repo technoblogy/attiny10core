@@ -19,4 +19,4 @@ Download the .zip, extract it, and place it in the **hardware** folder inside th
 * ATtiny10
 * ATtiny9
 * ATtiny5
-* ATtiny5
+* ATtiny4
