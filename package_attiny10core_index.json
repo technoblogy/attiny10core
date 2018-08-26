@@ -1,0 +1,35 @@
+{
+   "packages":[
+      {
+         "name":"attiny10core",
+         "maintainer":"Technoblogy",
+         "websiteURL":"https://github.com/vitasimek/attiny10core.git",
+         "email":"",
+         "help":{
+            "online":"https://technoblogy.com"
+         },
+         "platforms":[
+            {
+               "name":"ATTiny10 Core",
+               "architecture":"avr",
+               "version":"1.0.0",
+               "category":"Contributed",
+               "url":" https://raw.githubusercontent.com/vitasimek/attiny10core/master/attiny10core.zip",
+               "archiveFileName":"attiny10core.zip",
+               "checksum":"SHA-256:70e4be1f10bc2930d19fe43f5545f83d27324a24be4c773c13608e769be5c70b",
+               "size":"3727",
+               "help":{
+                  "online":"http://technoblogy.com"
+               },
+               "boards":[
+                  {
+                     "name":"ATtiny10/9/5/4"
+                  }
+               ],
+               "toolsDependencies":[]
+            }
+         ],
+         "tools":[]
+      },
+  ]
+}
