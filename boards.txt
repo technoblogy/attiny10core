@@ -1,0 +1,24 @@
+# ATtiny10 Core
+
+menu.chip=Chip
+
+attiny10.name=ATtiny10/9/5/4
+attiny10.upload.tool=arduino:avrdude
+attiny10.upload.maximum_data_size=32
+attiny10.upload.speed=115200
+attiny10.build.f_cpu=8000000L
+attiny10.build.core=empty
+attiny10.build.variant=arduino:standard
+attiny10.build.board=AVR_ATTINY10
+attiny10.menu.chip.10=ATtiny10
+attiny10.menu.chip.10.build.mcu=attiny10
+attiny10.menu.chip.10.upload.maximum_size=1024
+attiny10.menu.chip.9=ATtiny9
+attiny10.menu.chip.9.build.mcu=attiny9
+attiny10.menu.chip.9.upload.maximum_size=1024
+attiny10.menu.chip.5=ATtiny5
+attiny10.menu.chip.5.build.mcu=attiny5
+attiny10.menu.chip.5.upload.maximum_size=512
+attiny10.menu.chip.4=ATtiny4
+attiny10.menu.chip.4.build.mcu=attiny4
+attiny10.menu.chip.4.upload.maximum_size=512
