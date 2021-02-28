@@ -24,8 +24,22 @@ http://www.technoblogy.com/package_technoblogy_index.json
 
 * Open the **Tools** > **Board** > **Boards Manager...** menu item.
 * Type **ATTiny10** into the **Filter your search...** box.
-* In the ATTiny10 panel click **Install**.
-* After installation is complete close the Boards Manager window.
+* In the **ATTiny10** panel click **Install**.
+* After installation is complete close the **Boards Manager** window.
+
+### Tutorial
+
+For a tutorial on programming the ATtiny10 see:
+
+[Programming the ATtiny10](http://www.technoblogy.com/show?1YQY)
+
+For some other examples see:
+
+[ATtiny10 Thermometer](http://www.technoblogy.com/show?2G8A)
+
+[ATtiny10 Thermometer PCB](http://www.technoblogy.com/show?2GPX)
+
+[ATtiny10 POV Pendant](http://www.technoblogy.com/show?201J)
 
 ### Supported chip variants:
 
