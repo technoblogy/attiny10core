@@ -16,6 +16,7 @@ Some versions of the avr-gcc compiler are incompatible with the ATtiny10, which 
 
 By using Boards Manager Installation this new version of the ATtiny10Core is able to specify which compiler version to use, which should solve these problems.
 
+* If you have the original version of this core in your **Arduino** **hardware** folder, delete it.
 * Open the Arduino IDE.
 * Open the **File** > **Preferences** menu item.
 * Enter the following URL in the **Additional Boards Manager URLs** dialog box:
