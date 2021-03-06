@@ -21,7 +21,8 @@ attiny10.menu.chip.5.upload.maximum_size=512
 attiny10.menu.chip.4=ATtiny4
 attiny10.menu.chip.4.build.mcu=attiny4
 attiny10.menu.chip.4.upload.maximum_size=512
+attiny10.menu.clock.1=1 MHz
+attiny10.menu.clock.1.build.f_cpu=1000000L
 attiny10.menu.clock.8=8 MHz
 attiny10.menu.clock.8.build.f_cpu=8000000L
-attiny10.menu.clock.1=1 MHz
-attiny10.menu.clock.8.build.f_cpu=1000000L
+
