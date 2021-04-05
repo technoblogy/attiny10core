@@ -2,6 +2,8 @@
   wiring.c
 */
 
+#include <Arduino.h>
+
 void init(void)
 {
   #if (F_CPU == 8000000L)
