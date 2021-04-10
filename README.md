@@ -4,9 +4,14 @@ ATtiny10Core
 For programming the ATtiny10/9/5/4. For more information see http://www.technoblogy.com/show?1YQY.
 
 
-This is a minimal Arduino core for programming the ATtiny10/9/5/4 using a USBasp programmer. It doesn't include any Arduino functions pinMode(), millis(), etc.
+This is a minimal Arduino core for programming the ATtiny10/9/5/4. It doesn't include any Arduino functions pinMode(), millis(), etc.
 
 Note: Version 2.0.0 of the ATtiny10Core now adopts the standard Arduino convention of **setup()** and **loop()** functions.
+
+### Supported programmers
+
+* USBasp
+* AVRISP mkII
 
 ### Supported IDE versions
 
