@@ -2,6 +2,9 @@
   ATtiny10 Frequency Generator
 
   Generates a tone on PB0 whose frequency depends on the voltage on PB1
+  
+  This works on ATtiny10 and ATtiny5.
+  On ATtiny9 and ATtiny4 it does not due the missing ADC function.
 
 */
 

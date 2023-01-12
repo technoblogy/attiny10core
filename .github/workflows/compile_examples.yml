@@ -1,0 +1,51 @@
+name: Compile examples
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  compile-examples:
+    name: attiny10:chip=${{matrix.board.fqbn}},clock=${{matrix.clock.freq}}
+    runs-on: ubuntu-latest
+
+    env:
+      platform-name: ATtiny10Core:avr
+      
+      available-adc-true: |
+        - libraries/ATtiny10Core/examples
+
+      available-adc-false: |
+        - libraries/ATtiny10Core/examples/Blink
+        - libraries/ATtiny10Core/examples/LED_Fade_IN_and_OUT
+
+    strategy:
+      fail-fast: false
+
+      matrix:
+        board:
+          - fqbn: 10
+          - fqbn: 9
+          - fqbn: 5
+          - fqbn: 4
+        clock:
+          - freq: 1
+          - freq: 8
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Compile 
+        uses: arduino/compile-sketches@main
+        with:
+          platforms: |
+            - source-url: http://www.technoblogy.com/package_technoblogy_index.json
+              name: ${{ env.platform-name }}
+              source-path: "./"
+          sketch-paths: |
+            # It's necessary to jump through some hoops to dynamically generate the env object keys to define the non-universal sketch paths
+            # https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#format
+            ${{ env[format('available-adc-{0}', (matrix.board.fqbn == 5) || (matrix.board.fqbn == 10))] }}
+          fqbn: ${{env.platform-name}}:attiny10:chip=${{matrix.board.fqbn}},clock=${{matrix.clock.freq}}
+            
